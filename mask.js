@@ -14,10 +14,10 @@ Mask =
 	
 	generic: function(v, _genericParameters) {
 		var _regex = _genericParameters.regex;
-		var _sintax = _genericParameters.sintax;
+		var _syntax = _genericParameters.syntax;
 		var _maxValue = _genericParameters.maxValue;
 		v = v.replace(/D/g,"");
-		v = v.replace(_regex, _sintax);
+		v = v.replace(_regex, _syntax);
 		
 		return (_maxValue != null) ? v.slice(0, _maxValue) : v;
 	},
